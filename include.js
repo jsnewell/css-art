@@ -54,6 +54,8 @@ let cards = [
     ["Kirby", ".Art/Kirby.index.html", "./Art/Kirby/Kirby.png", "Aldiekmann", "https://github.com/aldiekmann"],
     ["Cartoon Skull", "./Art/Jose-Rios/index.html", "./Art/Jose-Rios/skull_css.JPG", "Jose", "https://github.com/Riosjl41"],
     ["Butterfly", "./Art/R-Butterfly/index.html", "./Art/R-Butterfly/R-Butterfly.png", "Russell", "https://github.com/russellsoppe"],
+    ["The CSS Boat", ".Art/Jaime/index.html", ".Art/Jaime/TheCSSBoat.png", "Jaime", "https://github.com/jsnewell"],
+
     ];
 
 
