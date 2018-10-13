@@ -1,0 +1,297 @@
+body {
+	background-color: #a6d0ef;
+	border-bottom: 170px solid #4a91bb;
+	margin: 0;
+	padding: 0;
+}
+
+.box {
+	position: relative;
+	margin: 0;
+	display: block;
+	margin-top: 8%;
+	width: 600px;
+	height: 420px;
+	background: none;
+	transition: all 3s;
+	transition-duration: 5s;
+	transition-timing-function: linear;
+}
+
+.box:hover {
+	transform: translateX(100px);
+
+}
+
+.hull {
+	position: absolute;
+	background: #01234c;
+	top: 65%;
+	left: 25%;
+	width: 75%;
+	height: 40%;
+	-webkit-clip-path: polygon(25% 100%, 73% 100%, 100% 82%, 0% 82%);
+	clip-path: polygon(25% 100%, 73% 100%, 100% 82%, 0% 82%);
+	z-index: 1;
+}
+
+.hull-copy {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: #01234c;
+	-webkit-clip-path: polygon(25% 100%, 73% 100%, 100% 82%, 0% 82%);
+	clip-path: polygon(25% 100%, 73% 100%, 100% 82%, 0% 82%);
+	z-index: 2;
+
+}
+
+.cabin-forward {
+	position: absolute;
+	width: 3%;
+	height: 9%;
+	top: 85%;
+	right: 32%;
+	background: white;
+	border-radius: 50%;
+	z-index: 3;
+}
+
+.cabin-middle {
+	position: absolute;
+	width: 3%;
+	height: 9%;
+	top: 85%;
+	left: 50%;
+	background: white;
+	border-radius: 50%;
+	z-index: 3;
+}
+
+.cabin-aft {
+	position: absolute;
+	width: 3%;
+	height: 9%;
+	top: 85%;
+	left: 35%;
+	background: white;
+	border-radius: 50%;
+	z-index: 3;
+}
+
+.porthole {
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	top: 3%;
+	left: 7%;
+	background: #5a5b62;
+	border-radius: 50%;
+	z-index: 4;
+}
+
+.cockpit {
+	position: absolute;
+	width: 30%;
+	height: 10%;
+	top: 90%;
+	left: 37%;
+	background: #ffff;
+	border-radius: 20%;
+}
+
+.cockpit-copy {
+	width: 100%;
+	height:100%;
+	position: absolute;
+	background: white;
+	border-radius: 20%;
+}
+
+.window-forward {
+	position: absolute;
+	width: 35%;
+	height: 70%;
+	top: 5%;
+	right: 10%;
+	background: #5a5b62;
+	border-radius: 20%;
+	z-index: 1;
+}
+
+.window-aft {
+	position: absolute;
+	width: 35%;
+	height: 70%;
+	top: 5%;
+	left: 10%;
+	background: #5a5b62;
+	border-radius: 20%;
+	z-index: 1;
+
+}
+
+.mast {
+	position: absolute;
+	width: 1%;
+	height: 60%;
+	top: 40%;
+	left: 68%;
+	background: #ffff;
+}
+
+.main-sail-forward {
+	position: absolute;
+	width: 30%;
+	height: 55%;
+	top: 40%;
+	left: 69.5%;
+	-webkit-clip-path: polygon(0 0, 0% 100%, 60% 100%);
+	clip-path: polygon(0 0, 0% 100%, 60% 100%);
+	background: #ffff;
+}
+
+.main-sail-aft {
+	position: absolute;
+	width: 30%;
+	height: 48%;
+	top: 40%;
+	left: 37.5%;
+	background: #ffff;
+	-webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+	clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.cloud-left {
+	position: absolute;
+	width: 25%;
+	height: 20%;
+	top: -10%;
+	left: 25%;
+	background: #ffff;
+	border-radius: 50%;
+}
+
+.cloud-top {
+	position: absolute;
+	width: 25%;
+	height: 25%;
+	top: -15%;
+	left: 28%;
+	background: #ffff;
+	border-radius: 50%;
+}
+
+.cloud-right {
+	position: absolute;
+	width: 25%;
+	height: 20%;
+	top: -10%;
+	left: 35%;
+	background: #ffff;
+	border-radius: 50%;
+}
+
+.sun {
+	position: absolute;
+	width: 22%;
+	height: 30%;
+	top: -15%;
+	right: -95%;
+	background: #f7c401;
+	border-radius: 50%;
+	transition: all 3s;
+}
+
+.sunray-top {
+	position: absolute;
+	width: 15%;
+	height: 15%;
+	top: -18%;
+	left: 42%;
+	background: #f7c401;
+	-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.sunray-left {
+	position: absolute;
+	width: 15%;
+	height: 15%;
+	top: 42%;
+	left: -18%;
+	background: #f7c401;
+	-webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
+	clip-path: polygon(100% 0, 0 50%, 100% 100%);
+
+}
+
+.sunray-bottom {
+	position: absolute;
+	width: 15%;
+	height: 15%;
+	bottom: -18%;
+	left: 42%;
+	background: #f7c401;
+	-webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+	clip-path: polygon(100% 0, 0 0, 50% 100%);
+}
+
+.sunray-right {
+	position: absolute;
+	width: 15%;
+	height: 15%;
+	bottom: 42%;
+	right: -18%;
+	background: #f7c401;
+	-webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+	clip-path: polygon(100% 50%, 0 0, 0 100%);
+}
+
+.sunray-top-left {
+	position: absolute;
+	width: 15%;
+	height: 15%;
+	top: 1%;
+	left: 1%;
+	background: #f7c401;
+	-webkit-clip-path: polygon(100% 50%, 0 0, 50% 100%);
+	clip-path: polygon(100% 50%, 0 0, 50% 100%);
+}
+
+.sunray-top-right {
+	position: absolute;
+	width: 15%;
+	height: 15%;
+	top: 1%;
+	right: 1%;
+	background: #f7c401;
+	-webkit-clip-path: polygon(100% 0, 0 50%, 50% 100%);
+	clip-path: polygon(100% 0, 0 50%, 50% 100%);
+}
+
+.sunray-bottom-left {
+	position: absolute;
+	width: 15%;
+	height: 15%;
+	bottom: 1%;
+	left: 1%;
+	background: #f7c401;
+	-webkit-clip-path: polygon(50% 0, 0 100%, 100% 50%);
+	clip-path: polygon(50% 0, 0 100%, 100% 50%);
+}
+
+.sunray-bottom-right {
+	position: absolute;
+	width: 15%;
+	height: 15%;
+	bottom: 1%;
+	right: 1%;
+	background: #f7c401;
+	-webkit-clip-path: polygon(50% 0, 0 50%, 100% 100%);
+	clip-path: polygon(50% 0, 0 50%, 100% 100%);
+}
+
+.sun:hover {
+	transform: scale(1.5);
+}
